@@ -21,6 +21,6 @@ stop
 ```
 
 | nome pat | raça |
-| -------- | _____ |
+| --------  |-----|
 | tim tim | branco |
 | Milu | Fox Terrier |
