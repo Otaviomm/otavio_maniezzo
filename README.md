@@ -283,7 +283,11 @@ classDiagram
 
 # 6. Casos de uso.
 
-## 6.1 Histórias de usario.
+## 6.1 Casos de uso
+
+![Casos de uso](https://raw.githubusercontent.com/Otaviomm/otavio_maniezzo/refs/heads/main/casos_de_usodrawio.png?token=GHSAT0AAAAAACXWZC3YZARLRC57WRI23FMAZXTLWPQ)
+
+## 6.2 Histórias de usario.
 
 # 7. Diagrama de componentes.
 
