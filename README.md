@@ -287,7 +287,120 @@ classDiagram
 
 ![Casos de uso](https://raw.githubusercontent.com/Otaviomm/otavio_maniezzo/refs/heads/main/casos_de_usodrawio.png?token=GHSAT0AAAAAACXWZC3YZARLRC57WRI23FMAZXTLWPQ)
 
-## 6.2 Histórias de usario.
+## 6.2 Histórias de usuario.
+
+# Histórias de Usuário
+
+## Cadastro de Cliente e Animal
+**Como** cliente da clínica veterinária,  
+**Quero** cadastrar meus dados pessoais e os dados dos meus animais,  
+**Para** que eu possa utilizar os serviços da clínica.
+
+## Informar Condições do Animal
+**Como** cliente da clínica veterinária,  
+**Quero** informar as condições em que o meu animal chegou à clínica,  
+**Para** que o veterinário possa entender o estado atual do animal.
+
+## Informar Tipo de Ração
+**Como** cliente da clínica veterinária,  
+**Quero** informar o tipo de ração que o meu animal consome,  
+**Para** que essa informação esteja registrada no prontuário do animal.
+
+## Informar Hábitos do Animal
+**Como** cliente da clínica veterinária,  
+**Quero** informar os hábitos do meu animal,  
+**Para** que o veterinário tenha um histórico comportamental do animal.
+
+## Atendimento por Vários Veterinários
+**Como** administrador da clínica,  
+**Quero** que mais de um veterinário possa atender o mesmo animal,  
+**Para** garantir a flexibilidade e a disponibilidade no atendimento.
+
+## Atendimento com Agenda do Dia
+**Como** cliente da clínica veterinária,  
+**Quero** que o meu animal seja atendido conforme a agenda disponível do dia,  
+**Para** que o atendimento seja organizado e eficiente.
+
+## Ficha e Prontuário
+**Como** veterinário,  
+**Quero** registrar as informações do atendimento de cada animal em uma ficha e prontuário,  
+**Para** manter um histórico médico completo do animal.
+
+## Marcar Atendimento Futuro
+**Como** cliente da clínica veterinária,  
+**Quero** poder marcar horários de atendimento futuro para o meu animal,  
+**Para** garantir que o atendimento ocorra em um momento conveniente.
+
+## Gerar Receita
+**Como** veterinário,  
+**Quero** gerar uma receita após o atendimento do animal,  
+**Para** prescrever medicamentos ou tratamentos adequados.
+
+## Atendimento Inicial pelo Atendente
+**Como** atendente da clínica veterinária,  
+**Quero** receber o cliente e seu animal ao chegarem na clínica,  
+**Para** garantir que o processo de atendimento seja iniciado corretamente.
+
+## Verificar Agenda com Veterinário
+**Como** atendente da clínica veterinária,  
+**Quero** verificar a agenda disponível dos veterinários,  
+**Para** saber se há disponibilidade para o atendimento imediato ou futuro.
+
+## Fila de Espera
+**Como** atendente da clínica veterinária,  
+**Quero** colocar o cliente e seu animal em uma fila de espera, caso necessário,  
+**Para** organizar o fluxo de atendimentos.
+
+## Levar Cliente até o Veterinário
+**Como** atendente da clínica veterinária,  
+**Quero** levar o cliente e seu animal até o veterinário,  
+**Para** garantir que o atendimento ocorra sem problemas.
+
+## Entrevista Inicial com o Dono do Animal
+**Como** veterinário,  
+**Quero** realizar uma entrevista com o dono do animal,  
+**Para** entender o histórico e as condições do animal antes de iniciar o exame.
+
+## Formulário de Entrevista
+**Como** veterinário,  
+**Quero** registrar os resultados da entrevista em um formulário,  
+**Para** que essas informações fiquem documentadas no prontuário do animal.
+
+## Exame e Prontuário
+**Como** veterinário,  
+**Quero** examinar o animal e anotar minhas observações no prontuário,  
+**Para** manter um registro médico preciso.
+
+## Receita para Tratamento
+**Como** veterinário,  
+**Quero** emitir uma receita para o tratamento do animal, se necessário,  
+**Para** que o animal receba o cuidado adequado.
+
+## Marcar Animal com RFID
+**Como** administrador da clínica veterinária,  
+**Quero** marcar os animais com RFID,  
+**Para** facilitar a identificação e o acompanhamento do animal.
+
+## Informar Carteira de Vacinação
+**Como** cliente da clínica veterinária,  
+**Quero** informar os dados da carteira de vacinação do meu animal,  
+**Para** que o veterinário tenha acesso ao histórico vacinal.
+
+## Serviço de Banho e Tosa
+**Como** cliente da clínica veterinária,  
+**Quero** solicitar o serviço de busca e entrega do meu animal para banho e tosa,  
+**Para** que meu animal receba esses cuidados sem que eu precise levá-lo à clínica.
+
+## Informar Tipo de Tosa
+**Como** cliente da clínica veterinária,  
+**Quero** informar o tipo de tosa desejada para meu animal,  
+**Para** que o serviço de tosa atenda às minhas preferências.
+
+## Serviço de Hospedagem
+**Como** cliente da clínica veterinária,  
+**Quero** solicitar o serviço de hospedagem para o meu animal,  
+**Para** que ele seja cuidado enquanto eu estiver ausente.
+
 
 # 7. Diagrama de componentes.
 
