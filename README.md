@@ -285,7 +285,7 @@ classDiagram
 
 ## 6.1 Casos de uso
 
-![Casos de uso](https://raw.githubusercontent.com/Otaviomm/otavio_maniezzo/refs/heads/main/casos_de_usodrawio.png?token=GHSAT0AAAAAACXWZC3YZARLRC57WRI23FMAZXTLWPQ)
+![Casos de uso](https://github.com/Otaviomm/otavio_maniezzo/blob/main/casos_de_usodrawio.png?raw=true)
 
 ## 6.2 Histórias de usuario.
 
