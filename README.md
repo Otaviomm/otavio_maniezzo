@@ -435,11 +435,13 @@ Tela de cadastro de animais:
 
 ![Animal_Cadastro](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/animal%202024-10-07%20210902.png)
 
+Tela de relatorio da agenda:
 
+![Agenda_Relatorio](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/agenda%202024-10-07%20210615.png)
 
-![]()
+Tela de cadastro da agenda:
 
-![]()
+![Agenda_Cadastro](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/agenda%202024-10-07%20210654.png)
 
 ![]()
 
