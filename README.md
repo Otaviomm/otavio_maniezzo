@@ -409,17 +409,33 @@ classDiagram
 
 # 9. Protótipo de telas.
 
+## 9.1. Telas Script Case
+
+Tela de Login:
+
+![Login](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/login%202024-10-07%20210428.png)
+
+Tela Dashboard:
+
 ![Dashboard](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/dashbord%202024-10-04%20223141.png)
 
-![]()
+Tela de relatório de clientes:
 
-![]()
+![Cliente_Relatorio](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/cliente%202024-10-07%20211024.png)
 
-![]()
+Tela de cadastro de clientes:
 
-![]()
+![Cliente_Cadastro](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/cliente%202024-10-07%20211055.png)
 
-![]()
+Tela de relatório de animais:
+
+![Animal_Relatorio](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/animal%202024-10-07%20210745.png)
+
+Tela de cadastro de animais:
+
+![Animal_Cadastro](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/animal%202024-10-07%20210902.png)
+
+
 
 ![]()
 
