@@ -287,6 +287,7 @@ classDiagram
 
 ![Casos de uso](https://github.com/Otaviomm/otavio_maniezzo/blob/main/casos_de_usodrawio.png?raw=true)
 
+
 ## 6.2 Histórias de usuario.
 
 # Histórias de Usuário
@@ -407,6 +408,30 @@ classDiagram
 # 8. Diagrama de implantação.
 
 # 9. Protótipo de telas.
+
+![Dashboard](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/dashbord%202024-10-04%20223141.png)
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
+
+![]()
 
 # 10. Diagrama de navegçaõ de telas.
 
