@@ -443,13 +443,21 @@ Tela de cadastro da agenda:
 
 ![Agenda_Cadastro](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/agenda%202024-10-07%20210654.png)
 
-![]()
+Tela de relatório de atendente:
 
-![]()
+![Atendente_Relatorio](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/atendente%202024-10-07%20210930.png)
 
-![]()
+Tela do grafico de cliente:
 
-![]()
+![Grafico_cliente](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/grafico%202024-10-07%20211155.png)
+
+Tela de alteração de senha:
+
+![Senha_Alteração](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/alterar%20senha%202024-10-07%20211226.png)
+
+Tela de configurações de segurança:
+
+![Segurança_Configuração](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/segurança%202024-10-07%20211334.png)
 
 # 10. Diagrama de navegçaõ de telas.
 
