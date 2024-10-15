@@ -496,6 +496,74 @@ graph TD
 ```
 # 11. Pilha tecnológica.
 
+```mermaid
+graph TD
+    %% Camada de Acesso
+    A[Login] --> B[Menu Principal]
+    
+    B --> C[Cadastro]
+    C --> C1[Cadastro do Cliente]
+    C --> C2[Cadastro do Animal]
+    C --> C3[Condições do Animal]
+    
+    B --> D[Atendimento]
+    D --> D1[Ficha e Prontuário]
+    D --> D2[Receita]
+    D --> D3[Entrevista]
+    D3 --> D4[Formulário de Entrevista]
+    
+    B --> E[Agenda]
+    E --> E1[Consulta de Agenda]
+    E --> E2[Marcação de Horário]
+    
+    B --> F[Banho e Tosa]
+    F --> F1[Marcação de Banho e Tosa]
+    
+    B --> G[Hospedagem]
+    
+    B --> H[Histórico do Animal]
+    
+    B --> I[Financeiro]
+    
+    %% Camada de Aplicação
+    subgraph Servidor de Aplicação
+        App[Aplicação Web/Aplicativo Móvel]
+        Auth[Autenticação]
+        CadastroSys[Sistema de Cadastro]
+        AtendimentoSys[Sistema de Atendimento]
+        AgendaSys[Sistema de Agenda]
+        BanhoTosaSys[Sistema de Banho e Tosa]
+        HospedagemSys[Sistema de Hospedagem]
+        HistoricoSys[Sistema de Histórico]
+        FinanceiroSys[Sistema Financeiro]
+    end
+    
+    %% Camada de Dados
+    subgraph Banco de Dados
+        Database[(PostgreSQL)]
+    end
+    
+    %% Conexões
+    A -->|Autenticação| Auth
+    B -->|Integração| App
+    C1 & C2 & C3 --> CadastroSys
+    D1 & D2 & D3 & D4 --> AtendimentoSys
+    E1 & E2 --> AgendaSys
+    F1 --> BanhoTosaSys
+    G --> HospedagemSys
+    H --> HistoricoSys
+    I --> FinanceiroSys
+    
+    App -->|Acessa Dados| Database
+    CadastroSys --> Database
+    AtendimentoSys --> Database
+    AgendaSys --> Database
+    BanhoTosaSys --> Database
+    HospedagemSys --> Database
+    HistoricoSys --> Database
+    FinanceiroSys --> Database
+```
+
 # 12. Requisitos de sistema.
 
 # 13. Considerações de segurança.
