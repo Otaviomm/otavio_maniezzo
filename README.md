@@ -405,7 +405,11 @@ classDiagram
 
 # 7. Diagrama de componentes.
 
+![Diagrama_Componentes](https://github.com/Otaviomm/otavio_maniezzo/blob/main/Diagrama%20de%20componente.drawio.png)
+
 # 8. Diagrama de implantação.
+
+![Diagrama_Implantação](https://github.com/Otaviomm/otavio_maniezzo/blob/main/Diagrama%20de%20implantação.drawio.png)
 
 # 9. Protótipo de telas.
 
