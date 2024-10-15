@@ -463,8 +463,37 @@ Tela de configurações de segurança:
 
 ![Segurança_Configuração](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/segurança%202024-10-07%20211334.png)
 
-# 10. Diagrama de navegçaõ de telas.
+# 10. Diagrama de navegaçaõ de telas.
 
+```mermaid
+graph TD
+    A[Login] --> B[Menu Principal]
+    
+    B --> C[Cadastro]
+    C --> C1[Cadastro do Cliente]
+    C --> C2[Cadastro do Animal]
+    C --> C3[Condições do Animal]
+    
+    B --> D[Atendimento]
+    D --> D1[Ficha e Prontuário]
+    D --> D2[Receita]
+    D --> D3[Entrevista]
+    D3 --> D4[Formulário de Entrevista]
+    
+    B --> E[Agenda]
+    E --> E1[Consulta de Agenda]
+    E --> E2[Marcação de Horário]
+    
+    B --> F[Banho e Tosa]
+    F --> F1[Marcação de Banho e Tosa]
+    
+    B --> G[Hospedagem]
+    
+    B --> H[Histórico do Animal]
+    
+    B --> I[Financeiro]
+
+```
 # 11. Pilha tecnológica.
 
 # 12. Requisitos de sistema.
