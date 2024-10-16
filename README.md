@@ -8,16 +8,50 @@ Repositório da disciplina de engenharia de software.
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe.](#5-diagrama-de-classe)
 - [6. Casos de uso.](#6-casos-de-uso)
-  - [6.1 Histórias de usario.](#61-histórias-de-usario)
+  - [6.1 Casos de uso](#61-casos-de-uso)
+  - [6.2 Histórias de usuario.](#62-histórias-de-usuario)
+- [Histórias de Usuário](#histórias-de-usuário)
+  - [Cadastro de Cliente e Animal](#cadastro-de-cliente-e-animal)
+  - [Informar Condições do Animal](#informar-condições-do-animal)
+  - [Informar Tipo de Ração](#informar-tipo-de-ração)
+  - [Informar Hábitos do Animal](#informar-hábitos-do-animal)
+  - [Atendimento por Vários Veterinários](#atendimento-por-vários-veterinários)
+  - [Atendimento com Agenda do Dia](#atendimento-com-agenda-do-dia)
+  - [Ficha e Prontuário](#ficha-e-prontuário)
+  - [Marcar Atendimento Futuro](#marcar-atendimento-futuro)
+  - [Gerar Receita](#gerar-receita)
+  - [Atendimento Inicial pelo Atendente](#atendimento-inicial-pelo-atendente)
+  - [Verificar Agenda com Veterinário](#verificar-agenda-com-veterinário)
+  - [Fila de Espera](#fila-de-espera)
+  - [Levar Cliente até o Veterinário](#levar-cliente-até-o-veterinário)
+  - [Entrevista Inicial com o Dono do Animal](#entrevista-inicial-com-o-dono-do-animal)
+  - [Formulário de Entrevista](#formulário-de-entrevista)
+  - [Exame e Prontuário](#exame-e-prontuário)
+  - [Receita para Tratamento](#receita-para-tratamento)
+  - [Marcar Animal com RFID](#marcar-animal-com-rfid)
+  - [Informar Carteira de Vacinação](#informar-carteira-de-vacinação)
+  - [Serviço de Banho e Tosa](#serviço-de-banho-e-tosa)
+  - [Informar Tipo de Tosa](#informar-tipo-de-tosa)
+  - [Serviço de Hospedagem](#serviço-de-hospedagem)
 - [7. Diagrama de componentes.](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação.](#8-diagrama-de-implantação)
 - [9. Protótipo de telas.](#9-protótipo-de-telas)
-- [10. Diagrama de navegçaõ de telas.](#10-diagrama-de-navegçaõ-de-telas)
+  - [9.1. Telas Script Case](#91-telas-script-case)
+- [10. Diagrama de navegaçaõ de telas.](#10-diagrama-de-navegaçaõ-de-telas)
 - [11. Pilha tecnológica.](#11-pilha-tecnológica)
 - [12. Requisitos de sistema.](#12-requisitos-de-sistema)
+  - [12.1 Requisitos do lado do Cliente.](#121-requisitos-do-lado-do-cliente)
+  - [12.2 Requisitos do lado de Servidor](#122-requisitos-do-lado-de-servidor)
 - [13. Considerações de segurança.](#13-considerações-de-segurança)
-- [14. Manutenção e instalação.](#14-manutenção-e-instalação)
-- [15. Glossário](#15-glossário)
+  - [13.1. Lado Cliente](#131-lado-cliente)
+  - [13.2. Lado Servidor](#132-lado-servidor)
+- [14. Manutenção, instalação e Novas Funcionalidade](#14-manutenção-instalação-e-novas-funcionalidade)
+  - [14.1. Instalado no servidor](#141-instalado-no-servidor)
+  - [14.2. Manutenção](#142-manutenção)
+  - [14.3. Novas funcionalidades](#143-novas-funcionalidades)
+- [15. Treinamento](#15-treinamento)
+  - [15.1. Usuario](#151-usuario)
+  - [15.2. Admin](#152-admin)
 - [16. Script SQL](#16-script-sql)
   - [16.1. Comandos create table;](#161-comandos-create-table)
   - [16.2. Comandos insert gerando dados ficticios;](#162-comandos-insert-gerando-dados-ficticios)
@@ -84,6 +118,8 @@ Descrição do cenário onde o sistema deverá funcionar.
 # 3. Visão geral do sistema.
 
 Descrição do sistema e suas relações.
+
+Descreva oque o sistema entrega do ponto de vista do usuario.
 
 # 4. Diagrama ER
 
@@ -566,11 +602,68 @@ graph TD
 
 # 12. Requisitos de sistema.
 
+## 12.1 Requisitos do lado do Cliente.
+navegador 
+link 
+maquina
+
+## 12.2 Requisitos do lado de Servidor
+servidor fisico, virtual, hospedagem compartilhada
+dois softwares servidor de banco e servidor web
+um banco de dados
+
 # 13. Considerações de segurança.
 
-# 14. Manutenção e instalação.
+## 13.1. Lado Cliente
 
-# 15. Glossário
+Regra de senha
+captcha, qtda min. caracteres, caracteres especiais, etc...
+autenticaçã de 2 fatores
+recuperação de senha com e-mail
+codigo no e-mail
+
+>> mini politica de segurança
+
+## 13.2. Lado Servidor 
+
+Linux!
+
+Politica de backup de aplicação e banco
+1x mês 1 full backup
+1x a cada 15 dias um full backup
+no final de cada dia um backup incremnetal
+
+a admin do sistema não acessa dados do usuario
+
+# 14. Manutenção, instalação e Novas Funcionalidade
+
+## 14.1. Instalado no servidor 
+
+instalado no servidor ! 
+
+## 14.2. Manutenção
+
+Quanto tempo demora para desenvolver novas funcionalidades?
+
+## 14.3. Novas funcionalidades
+
+1. formalização do pedido
+2. Cliente não da palpite em beleza de tela
+3. decidir sobre 3 criterios:
+a) equipe tem tempo?
+b) é economicamente viável?
+c) é tecnologicamente viável?
+
+
+# 15. Treinamento
+
+## 15.1. Usuario
+
+video na web
+
+## 15.2. Admin
+
+
 
 # 16. Script SQL
 
