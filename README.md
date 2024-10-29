@@ -879,7 +879,7 @@ c) é tecnologicamente viável?
 
 ## 15.1. Usuario
 
-video na web
+A maneira mais eficiente de realizar o treinamento seria pela disponibilização de videos instrutivos pela Web
 
 ## 15.2. Admin
 
