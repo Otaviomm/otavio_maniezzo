@@ -9,6 +9,8 @@ Repositório da disciplina de engenharia de software.
   - [4.1. Descrição das entidades:](#41-descrição-das-entidades)
   - [4.2. Descrição dos relacionamentos:](#42-descrição-dos-relacionamentos)
 - [5. Diagrama de classe.](#5-diagrama-de-classe)
+  - [5.1. Descrição das classes:](#51-descrição-das-classes)
+  - [5.2. Descrição dos relacionamentos:](#52-descrição-dos-relacionamentos)
 - [6. Casos de uso.](#6-casos-de-uso)
   - [6.1 Casos de uso](#61-casos-de-uso)
   - [6.2 Histórias de usuario.](#62-histórias-de-usuario)
@@ -366,6 +368,60 @@ classDiagram
     Atendente "1" --> "0..*" Agenda : organiza
 
 ```
+
+## 5.1. Descrição das classes:
+
+Cliente: Dados do cliente e operações para gerenciar os animais e suas condições.
+
+Animal: Informações dos animais e sua relação com os veterinários.
+
+Veterinario: Informações dos veterinários e ações relacionadas a consultas e prescrições.
+
+Atendente: Gerencia a agenda e organiza a fila de espera.
+
+Ficha: Registra observações dos atendimentos.
+
+Prontuario: Contém informações detalhadas do histórico de saúde do animal.
+
+Receita: Prescrições fornecidas pelo veterinário.
+
+Agenda: Registra os horários das consultas entre veterinários, clientes e animais.
+
+Servico: Representa serviços adicionais solicitados (banho, tosa).
+
+Hospedagem: Registra as reservas de hospedagem dos animais.
+
+## 5.2. Descrição dos relacionamentos:
+
+Cliente → Animal: Um cliente pode ter vários animais.
+
+Cliente → Agenda: Um cliente pode agendar várias consultas.
+
+Cliente → Receita: Um cliente pode receber várias receitas.
+
+Cliente → Hospedagem: Um cliente pode utilizar o serviço de hospedagem.
+
+Cliente → Servico: Um cliente pode solicitar serviços como banho ou tosa.
+
+Animal → Veterinario: Um animal pode ser atendido por vários veterinários.
+
+Animal → Ficha: Um animal possui uma ficha com observações.
+
+Animal → Prontuario: Um animal tem um prontuário com o histórico de saúde.
+
+Animal → Receita: Um animal pode receber várias receitas.
+
+Animal → Agenda: Um animal pode estar marcado em várias agendas.
+
+Veterinario → Prontuario: Um veterinário preenche o prontuário do animal.
+
+Veterinario → Ficha: Um veterinário anota observações na ficha do animal.
+
+Veterinario → Agenda: Um veterinário participa de várias consultas.
+
+Atendente → Cliente: Um atendente organiza os atendimentos para vários clientes.
+
+Atendente → Agenda: Um atendente gerencia as agendas de atendimento.
 
 # 6. Casos de uso.
 
