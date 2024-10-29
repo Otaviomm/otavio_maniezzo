@@ -203,30 +203,51 @@ erDiagram
 ## 4.1. Descrição das entidades:
 
 CLIENTE: Dados dos clientes da clínica (nome, telefone, endereço, carteira de vacinação).
+
 ANIMAL: Informações dos animais (nome, espécie, condição, RFID, ração, hábitos).
+
 VETERINARIO: Dados dos veterinários (nome, especialidade).
+
 ATENDENTE: Informações dos atendentes (nome).
+
 AGENDA: Horários de atendimento (data, hora).
+
 RECEITA: Prescrições para os animais (descrição, data).
+
 PRONTUARIO: Histórico médico dos animais (observações, resultado da entrevista).
+
 SERVICO: Serviços oferecidos (tipo, tipo de tosa).
+
 HOSPEDAGEM: Registro de hospedagem (data de entrada e saída).
 
 ## 4.2. Descrição dos relacionamentos:
 
 CLIENTE → ANIMAL: Um cliente pode ter vários animais.
+
 CLIENTE → AGENDA: Um cliente pode marcar vários horários.
+
 CLIENTE → RECEITA: Um cliente pode receber várias receitas.
+
 CLIENTE → HOSPEDAGEM: Um cliente pode utilizar o serviço de hospedagem.
+
 CLIENTE → SERVICO: Um cliente pode solicitar diversos serviços.
+
 ANIMAL → VETERINARIO: Um animal pode ser atendido por vários veterinários.
+
 ANIMAL → PRONTUARIO: Um animal tem um prontuário.
+
 ANIMAL → RECEITA: Um animal pode receber várias receitas.
+
 ANIMAL → AGENDA: Um animal pode ter vários horários marcados.
+
 VETERINARIO → AGENDA: Um veterinário pode estar em várias agendas.
+
 VETERINARIO → PRONTUARIO: Um veterinário anota observações no prontuário.
+
 ATENDENTE → CLIENTE: Um atendente atende vários clientes.
+
 ATENDENTE → AGENDA: Um atendente organiza a agenda.
+
 
 # 5. Diagrama de classe.
 
