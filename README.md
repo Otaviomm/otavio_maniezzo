@@ -897,11 +897,29 @@ O administrador do sistema não terá acesso aos dados pessoais dos usuários pa
 
 ## 14.1. Instalado no servidor 
 
-instalado no servidor ! 
+1. Instalação:
+
+Requisitos: O sistema requer um servidor compatível com Linux ou Windows, suporte a banco de dados (ex: MySQL) e um navegador moderno para os clientes.
+
+Etapas:
+
+Servidor: Configuração do ambiente (SO, banco de dados, servidor web) e instalação do sistema.
+
+Cliente: Acesso via navegador web, sem necessidade de instalação no dispositivo do usuário.
+
+Configuração Inicial: Registro de dados da clínica, veterinários, atendentes e regras de agendamento.
 
 ## 14.2. Manutenção
 
-Quanto tempo demora para desenvolver novas funcionalidades?
+Backups: Implementação de uma política de backups regulares, com backups completos mensais e incrementais diários, para proteger dados críticos.
+
+Atualizações:
+
+Sistema: Correções de bugs e patches de segurança lançados regularmente.
+
+Banco de Dados: Monitoramento do desempenho e otimização conforme o volume de dados aumenta.
+
+Monitoramento: Ferramentas de monitoramento para acompanhar o desempenho e detectar problemas (tempo de resposta, uso de recursos, etc.).
 
 ## 14.3. Novas funcionalidades
 
@@ -911,6 +929,14 @@ Quanto tempo demora para desenvolver novas funcionalidades?
 a) equipe tem tempo?
 b) é economicamente viável?
 c) é tecnologicamente viável?
+
+Novas Funcionalidades:
+
+Solicitações: Novas funcionalidades podem ser implementadas conforme as necessidades da clínica evoluem. Ex: integração com pagamento online, relatórios avançados.
+
+Desenvolvimento Ágil: Utilização de um ciclo de desenvolvimento ágil, permitindo a adição de funcionalidades por meio de sprints curtos e atualizações frequentes.
+
+Feedback: O feedback dos usuários (clientes, veterinários, atendentes) é coletado para priorizar melhorias.
 
 
 # 15. Treinamento
