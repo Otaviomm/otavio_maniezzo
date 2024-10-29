@@ -879,10 +879,101 @@ c) é tecnologicamente viável?
 
 ## 15.1. Usuario
 
-A maneira mais eficiente de realizar o treinamento seria pela disponibilização de videos instrutivos pela Web
+A maneira mais eficiente de realizar o treinamento seria pela disponibilização de videos instrutivos pela Web.
+
+Os videos precisam conter:
+
+1. Acesso ao Sistema e Funções Básicas:
+
+Introdução à interface de atendentes e veterinários.
+
+Explicação sobre como fazer login, navegar no sistema, e acessar funcionalidades.
+
+2. Gerenciamento de Consultas e Fila de Espera (Atendentes):
+
+Como verificar e ajustar a agenda de consultas.
+
+Adicionar e remover clientes da fila de espera.
+
+Acompanhamento do fluxo de atendimento do cliente.
+
+3. Registro de Informações e Prontuário (Veterinários):
+
+Como preencher e atualizar o prontuário do animal durante e após a consulta.
+
+Adição de observações no prontuário e ficha médica.
+
+4. Prescrição de Receitas:
+
+Como prescrever e registrar receitas para os animais atendidos.
+
+Gerenciamento e emissão de receitas para os clientes.
+
+5. Dúvidas e Resolução de Problemas:
+
+Treinamento em como resolver problemas comuns no uso do sistema.
+
+Sessão de perguntas e respostas com foco nas operações do dia a dia.
 
 ## 15.2. Admin
 
+1. Introdução ao Sistema e Interface de Administração:
+
+Apresentação das funcionalidades administrativas.
+
+Navegação na interface de gerenciamento do sistema, incluindo visualização de logs e gestão de usuários.
+
+2. Gestão de Usuários e Permissões:
+
+Como criar, editar e remover contas de usuários (clientes, atendentes, veterinários).
+
+Configuração de níveis de acesso e permissões de acordo com o perfil de cada usuário.
+
+3. Gerenciamento de Agendas e Atendimentos:
+
+Como visualizar, alterar e ajustar a agenda de atendimentos.
+
+Configuração de horários e atribuição de veterinários aos clientes e animais.
+
+4. Backup e Recuperação de Dados:
+
+Explicação da política de backup:
+
+Backup completo mensal e a cada 15 dias.
+
+Backup incremental diário.
+
+Passo a passo para restaurar dados em caso de necessidade.
+
+5. Segurança e Privacidade de Dados:
+
+Configurações de segurança no sistema, como certificado SSL e firewall.
+
+Explicação da política de segurança, incluindo a restrição de acesso a dados sensíveis (o administrador não tem acesso aos dados do cliente).
+
+6. Monitoramento do Sistema e Logs:
+
+Como acessar e monitorar os logs do sistema para auditoria e resolução de problemas.
+
+Configuração de alertas para atividades suspeitas ou problemas no sistema.
+
+7. Atualização do Sistema:
+
+Instrução sobre como gerenciar as atualizações do sistema.
+
+Verificação de atualizações e aplicação de patches de segurança.
+
+8. Gerenciamento de Hospedagem e Serviços:
+
+Como organizar e gerenciar reservas de hospedagem.
+
+Configuração de disponibilidade para serviços como banho e tosa.
+
+9. Suporte Técnico e Escalabilidade:
+
+Como contatar o suporte técnico em caso de falhas.
+
+Explicação de como realizar upgrades no sistema para escalabilidade e aumento de capacidade conforme a clínica cresce.
 
 
 # 16. Script SQL
