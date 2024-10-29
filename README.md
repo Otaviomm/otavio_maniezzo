@@ -6,6 +6,8 @@ Repositório da disciplina de engenharia de software.
 - [2. Descrição do sistema.](#2-descrição-do-sistema)
 - [3. Visão geral do sistema.](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
+  - [4.1. Descrição das entidades:](#41-descrição-das-entidades)
+  - [4.2. Descrição dos relacionamentos:](#42-descrição-dos-relacionamentos)
 - [5. Diagrama de classe.](#5-diagrama-de-classe)
 - [6. Casos de uso.](#6-casos-de-uso)
   - [6.1 Casos de uso](#61-casos-de-uso)
@@ -198,6 +200,33 @@ erDiagram
     ATENDENTE ||--o{ CLIENTE : "atende"
     ATENDENTE ||--o{ AGENDA : "organiza"
 ```
+## 4.1. Descrição das entidades:
+
+CLIENTE: Dados dos clientes da clínica (nome, telefone, endereço, carteira de vacinação).
+ANIMAL: Informações dos animais (nome, espécie, condição, RFID, ração, hábitos).
+VETERINARIO: Dados dos veterinários (nome, especialidade).
+ATENDENTE: Informações dos atendentes (nome).
+AGENDA: Horários de atendimento (data, hora).
+RECEITA: Prescrições para os animais (descrição, data).
+PRONTUARIO: Histórico médico dos animais (observações, resultado da entrevista).
+SERVICO: Serviços oferecidos (tipo, tipo de tosa).
+HOSPEDAGEM: Registro de hospedagem (data de entrada e saída).
+
+## 4.2. Descrição dos relacionamentos:
+
+CLIENTE → ANIMAL: Um cliente pode ter vários animais.
+CLIENTE → AGENDA: Um cliente pode marcar vários horários.
+CLIENTE → RECEITA: Um cliente pode receber várias receitas.
+CLIENTE → HOSPEDAGEM: Um cliente pode utilizar o serviço de hospedagem.
+CLIENTE → SERVICO: Um cliente pode solicitar diversos serviços.
+ANIMAL → VETERINARIO: Um animal pode ser atendido por vários veterinários.
+ANIMAL → PRONTUARIO: Um animal tem um prontuário.
+ANIMAL → RECEITA: Um animal pode receber várias receitas.
+ANIMAL → AGENDA: Um animal pode ter vários horários marcados.
+VETERINARIO → AGENDA: Um veterinário pode estar em várias agendas.
+VETERINARIO → PRONTUARIO: Um veterinário anota observações no prontuário.
+ATENDENTE → CLIENTE: Um atendente atende vários clientes.
+ATENDENTE → AGENDA: Um atendente organiza a agenda.
 
 # 5. Diagrama de classe.
 
@@ -710,7 +739,6 @@ Implementação de autenticação de dois fatores (2FA), exigindo uma segunda fo
 7. Recuperação de Senha via E-mail:
 
 Oferecer a opção de recuperação de senha, onde o usuário recebe um código de recuperação enviado ao e-mail cadastrado.
-
 
 ## 13.2. Lado Servidor 
 
