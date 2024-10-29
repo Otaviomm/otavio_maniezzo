@@ -121,9 +121,47 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 # 3. Visão geral do sistema.
 
-Descrição do sistema e suas relações.
+Cliente:
 
-Descreva oque o sistema entrega do ponto de vista do usuario.
+Cadastra seus animais com detalhes (nome, espécie, condições).
+
+Agenda consultas e solicita serviços (banho, tosa, hospedagem).
+
+Acessa prontuários e receitas emitidas pelos veterinários.
+
+Veterinário:
+
+Consulta o histórico dos animais.
+
+Registra atendimentos e preenche prontuários.
+
+Prescreve receitas e gerencia sua agenda.
+
+Atendente:
+
+Organiza a agenda de consultas.
+
+Gerencia a fila de espera e acompanha serviços.
+
+Relações:
+
+Cliente-Animal: Clientes gerenciam informações e agendamentos dos animais.
+
+Animal-Veterinário: Animais são atendidos por veterinários, que registram as consultas e receitas.
+
+Atendente-Agenda: Atendentes organizam a agenda de consultas e serviços.
+
+Benefícios:
+
+Praticidade: Gestão centralizada para clientes, veterinários e atendentes.
+
+Transparência: Acesso fácil ao histórico de saúde dos animais.
+
+Eficiência: Melhor organização das tarefas diárias da clínica.
+
+Segurança: Proteção de dados sensíveis dos clientes e animais.
+
+O sistema melhora a organização e a experiência dos usuários, tornando o processo de atendimento mais ágil e eficaz.
 
 # 4. Diagrama ER
 
