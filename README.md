@@ -603,37 +603,152 @@ graph TD
 # 12. Requisitos de sistema.
 
 ## 12.1 Requisitos do lado do Cliente.
-navegador 
-link 
-maquina
+1. Tipo de Sistema Operacional:
+   
+Windows, Linux, Android, iOS.
+
+Compatibilidade com versões recentes dos sistemas operacionais.
+
+2. Tipo de Navegador:
+
+Navegadores compatíveis: Chrome, Firefox, Safari, Edge (versões atualizadas).
+
+3. Acesso à Internet:
+
+Conexão estável à internet com banda mínima necessária para operação (recomendado: 2 Mbps ou superior).
+
+4. Recursos de Hardware (PC ou Mobile):
+
+PC:
+Processador: Intel Core i3 ou superior;
+Memória RAM: 4 GB (mínimo).
+Mobile:
+Processador: ARM Cortex-A53 ou superior;
+Memória RAM: 2 GB (mínimo).
+
+5. Resolução de Tela:
+Mínima: 1366x768 (PC).
+Suporte para telas de alta resolução em dispositivos móveis (mínimo: 720p).
+
+6. Permissões e Configurações de Segurança:
+
+Permissão para acessar internet e armazenamento local (cookies, cache).
+Permissões para o uso de câmera e microfone, se aplicável (por exemplo, para teleconsultas).
+
+7. Forma de Autenticação:
+
+Login com autenticação de dois fatores (2FA) recomendado.
 
 ## 12.2 Requisitos do lado de Servidor
-servidor fisico, virtual, hospedagem compartilhada
-dois softwares servidor de banco e servidor web
-um banco de dados
+
+1. Tipo de Sistema Operacional:
+
+Windows ou Linux (Ubuntu, CentOS, Debian), que suportem servidores web como Apache, Nginx ou IIS.
+
+2. Tipo de Processador:
+
+Processador de servidor: Intel Xeon ou AMD EPYC, com no mínimo 4 núcleos.
+
+3. Memória RAM:
+
+Mínimo de 8 GB, recomendado 16 GB ou mais, dependendo da quantidade de usuários simultâneos.
+
+4. Armazenamento:
+
+Armazenamento SSD de pelo menos 100 GB para o servidor de aplicação e banco de dados.
+Capacidade adicional para backups automáticos e logs do sistema.
+
+5. Rede:
+
+Largura de banda adequada (mínimo 1 Gbps).
+Endereço IP estático ou nome de domínio configurado.
+
+6. Segurança:
+
+Certificados SSL para criptografia de dados em trânsito.
+Firewall configurado para proteger contra acessos não autorizados.
+Monitoramento de tráfego e detecção de intrusões.
+
+7. Escalabilidade:
+
+Suporte para escalabilidade vertical (upgrades de hardware) e horizontal (adicionar mais servidores conforme necessário).
+Suporte a múltiplas conexões simultâneas com usuários.
+
+8. Serviços e Backup:
+
+Sistema de backup automatizado (diário/semanal) para garantir a integridade dos dados.
+Soluções de armazenamento de backup em mídia externa ou em nuvem.
 
 # 13. Considerações de segurança.
 
 ## 13.1. Lado Cliente
 
-Regra de senha
-captcha, qtda min. caracteres, caracteres especiais, etc...
-autenticaçã de 2 fatores
-recuperação de senha com e-mail
-codigo no e-mail
+1. HTTPS:
 
->> mini politica de segurança
+Criptografia para proteger os dados transmitidos entre cliente e servidor.
+
+2. Validação de Navegador:
+
+Verificação de navegadores compatíveis com as últimas atualizações de segurança.
+
+3. Validações de Páginas e Conteúdo:
+
+Uso de técnicas como validação de entrada de dados para evitar ataques de XSS e injeção de código.
+
+4. Regra de Senha:
+
+Exigir uma senha com quantidade mínima de caracteres, inclusão de caracteres especiais e regras específicas de segurança de senha para aumentar a complexidade e a proteção.
+
+5. CAPTCHA:
+
+Utilização de CAPTCHA para prevenir bots e ataques automatizados em áreas sensíveis, como login e formulários de contato.
+
+6. Autenticação de Dois Fatores (2FA):
+
+Implementação de autenticação de dois fatores (2FA), exigindo uma segunda forma de validação, como código enviado por SMS ou aplicativo de autenticação.
+
+7. Recuperação de Senha via E-mail:
+
+Oferecer a opção de recuperação de senha, onde o usuário recebe um código de recuperação enviado ao e-mail cadastrado.
+
 
 ## 13.2. Lado Servidor 
 
-Linux!
+1. Configuração de Pastas:
 
-Politica de backup de aplicação e banco
-1x mês 1 full backup
-1x a cada 15 dias um full backup
-no final de cada dia um backup incremnetal
+Manter pastas de arquivos com permissões adequadas, restringindo o acesso a áreas sensíveis.
 
-a admin do sistema não acessa dados do usuario
+2. Verificação de Dados de Entrada:
+
+Sanitizar e validar todos os dados recebidos dos clientes.
+
+3. Gerenciamento de Atualizações:
+
+Garantir que o servidor esteja sempre atualizado com os últimos patches de segurança.
+
+4. Hospedagem Segura:
+
+Implementação de proteção contra ataques e infraestruturas seguras de hospedagem.
+
+5. Uso de Certificados no Servidor:
+
+Utilização de certificados SSL/TLS para criptografar dados em trânsito e garantir a autenticidade do servidor.
+
+6. Sistema de Monitoramento e Logs:
+
+Monitoramento constante e logs detalhados para rastrear atividades suspeitas ou tentativas de ataque.
+
+7. Sistema Automatizado de Backup:
+
+Implementar uma política de backup com Linux, seguindo o cronograma:
+
+1 backup completo a cada 15 dias.
+Backup incremental no final de cada dia.
+Os backups devem ser criptografados e armazenados de forma segura.
+
+8. Acesso Restrito aos Administradores:
+
+O administrador do sistema não terá acesso aos dados pessoais dos usuários para proteger a privacidade e minimizar riscos.
 
 # 14. Manutenção, instalação e Novas Funcionalidade
 
