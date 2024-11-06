@@ -4,6 +4,8 @@ Repositório da disciplina de engenharia de software.
 - [otavio\_maniezzo](#otavio_maniezzo)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do sistema.](#2-descrição-do-sistema)
+  - [2.1 Requisitos](#21-requisitos)
+    - [Requisitos Funcionais e Não Funcionais.](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema.](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1. Descrição das entidades:](#41-descrição-das-entidades)
@@ -120,8 +122,41 @@ Descrição do cenário onde o sistema deverá funcionar.
     
 23. Oferece hospedagem para os animais 
     
+## 2.1 Requisitos 
 
-   
+### Requisitos Funcionais e Não Funcionais.
+
+| **ID** | **Tipo de Requisito**      | **Descrição**                                                                                             |
+|--------|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| RF01   | Funcional                   | O sistema deve permitir que os clientes façam cadastro de si e dos seus animais.                          |
+| RF02   | Funcional                   | O sistema deve permitir que os clientes informem as condições de chegada dos animais.                     |
+| RF03   | Funcional                   | O sistema deve permitir que os clientes informem o tipo de ração que o animal consome.                    |
+| RF04   | Funcional                   | O sistema deve permitir que os clientes informem os hábitos dos animais.                                  |
+| RF05   | Funcional                   | O sistema deve permitir que um animal seja atendido por mais de um veterinário.                           |
+| RF06   | Funcional                   | O sistema deve permitir agendamento de atendimentos conforme a agenda diária da clínica.                  |
+| RF07   | Funcional                   | O sistema deve gerar uma ficha e um prontuário para cada animal atendido.                                 |
+| RF08   | Funcional                   | O sistema deve permitir o agendamento de atendimentos futuros para os animais.                            |
+| RF09   | Funcional                   | O sistema deve gerar uma receita para o animal após o atendimento, se necessário.                         |
+| RF10   | Funcional                   | O sistema deve permitir que o atendente verifique a disponibilidade de horários com um veterinário.       |
+| RF11   | Funcional                   | O sistema deve gerenciar a fila de espera para atendimento, quando necessário.                            |
+| RF12   | Funcional                   | O sistema deve permitir que o atendente encaminhe o cliente e o animal até o veterinário.                 |
+| RF13   | Funcional                   | O sistema deve permitir que o veterinário registre o resultado da entrevista em um formulário.            |
+| RF14   | Funcional                   | O sistema deve permitir que o veterinário registre observações no prontuário do animal.                   |
+| RF15   | Funcional                   | O sistema deve marcar os animais com etiquetas RFID para identificação.                                   |
+| RF16   | Funcional                   | O sistema deve permitir que os clientes informem os dados da carteira de vacinação do animal.             |
+| RF17   | Funcional                   | O sistema deve permitir o agendamento e transporte dos animais para banho e tosa.                         |
+| RF18   | Funcional                   | O sistema deve permitir que o tipo de tosa seja informado previamente pelo cliente.                       |
+| RF19   | Funcional                   | O sistema deve oferecer hospedagem para os animais.                                                       |
+| RNF01  | Não Funcional               | O sistema deve ser acessível via dispositivos móveis e desktops.                                          |
+| RNF02  | Não Funcional               | O sistema deve garantir a segurança dos dados dos clientes e dos animais, incluindo o uso de RFID.        |
+| RNF03  | Não Funcional               | O sistema deve realizar backups diários e semanais para garantir a integridade dos dados.                 |
+| RNF04  | Não Funcional               | O sistema deve ter alta disponibilidade, permitindo acesso contínuo para marcação e consulta de horários. |
+| RNF05  | Não Funcional               | O sistema deve garantir a proteção de dados sensíveis conforme as normas de proteção de dados vigentes.   |
+| RNF06  | Não Funcional               | O sistema deve possuir uma interface intuitiva para facilitar o uso por atendentes e veterinários.        |
+| RNF07  | Não Funcional               | O tempo de resposta do sistema deve ser inferior a 2 segundos em operações comuns.                        |
+| RNF08  | Não Funcional               | O sistema deve estar disponível 99,9% do tempo, exceto em períodos de manutenção programada.              |
+| RNF09  | Não Funcional               | A interface do sistema deve estar em português e permitir fácil leitura de informações.                   |
+
 
 
 # 3. Visão geral do sistema.
