@@ -46,25 +46,25 @@ Repositório da disciplina de engenharia de software.
   - [9.2. diagrama de container](#92-diagrama-de-container)
   - [9.3. diagrama de componente](#93-diagrama-de-componente)
   - [9.4. diagrama de código](#94-diagrama-de-código)
-- [9. Protótipo de telas.](#9-protótipo-de-telas)
-  - [9.1. Telas Script Case](#91-telas-script-case)
-- [10. Diagrama de navegaçaõ de telas.](#10-diagrama-de-navegaçaõ-de-telas)
-- [11. Pilha tecnológica.](#11-pilha-tecnológica)
-- [12. Requisitos de sistema.](#12-requisitos-de-sistema)
-  - [12.1 Requisitos do lado do Cliente.](#121-requisitos-do-lado-do-cliente)
-  - [12.2 Requisitos do lado de Servidor](#122-requisitos-do-lado-de-servidor)
-- [13. Considerações de segurança.](#13-considerações-de-segurança)
-  - [13.1. Lado Cliente](#131-lado-cliente)
-  - [13.2. Lado Servidor](#132-lado-servidor)
-- [14. Manutenção, instalação e Novas Funcionalidade](#14-manutenção-instalação-e-novas-funcionalidade)
-  - [14.1. Instalado no servidor](#141-instalado-no-servidor)
-  - [14.2. Manutenção](#142-manutenção)
-  - [14.3. Novas funcionalidades](#143-novas-funcionalidades)
-- [15. Treinamento](#15-treinamento)
-  - [15.1. Usuario](#151-usuario)
-  - [15.2. Admin](#152-admin)
-- [16. Script SQL](#16-script-sql)
-  - [16.1. Comandos create table;](#161-comandos-create-table)
+- [10. Protótipo de telas.](#10-protótipo-de-telas)
+  - [10.1. Telas Script Case](#101-telas-script-case)
+- [11. Diagrama de navegaçaõ de telas.](#11-diagrama-de-navegaçaõ-de-telas)
+- [12. Pilha tecnológica.](#12-pilha-tecnológica)
+- [13. Requisitos de sistema.](#13-requisitos-de-sistema)
+  - [13.1 Requisitos do lado do Cliente.](#131-requisitos-do-lado-do-cliente)
+  - [13.2 Requisitos do lado de Servidor](#132-requisitos-do-lado-de-servidor)
+- [14. Considerações de segurança.](#14-considerações-de-segurança)
+  - [14.1. Lado Cliente](#141-lado-cliente)
+  - [14.2. Lado Servidor](#142-lado-servidor)
+- [15. Manutenção, instalação e Novas Funcionalidade](#15-manutenção-instalação-e-novas-funcionalidade)
+  - [15.1. Instalado no servidor](#151-instalado-no-servidor)
+  - [15.2. Manutenção](#152-manutenção)
+  - [15.3. Novas funcionalidades](#153-novas-funcionalidades)
+- [16. Treinamento](#16-treinamento)
+  - [16.1. Usuario](#161-usuario)
+  - [16.2. Admin](#162-admin)
+- [17. Script SQL](#17-script-sql)
+  - [17.1. Comandos create table;](#171-comandos-create-table)
   - [16.2. Comandos insert gerando dados ficticios;](#162-comandos-insert-gerando-dados-ficticios)
 
 
@@ -764,9 +764,9 @@ classDiagram
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 9. Protótipo de telas.
+# 10. Protótipo de telas.
 
-## 9.1. Telas Script Case
+## 10.1. Telas Script Case
 
 Tela de Login:
 
@@ -818,7 +818,7 @@ Tela de configurações de segurança:
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 10. Diagrama de navegaçaõ de telas.
+# 11. Diagrama de navegaçaõ de telas.
 
 ```mermaid
 graph TD
@@ -852,7 +852,7 @@ graph TD
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 11. Pilha tecnológica.
+# 12. Pilha tecnológica.
 
 ```mermaid
 graph TD
@@ -924,9 +924,9 @@ graph TD
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 12. Requisitos de sistema.
+# 13. Requisitos de sistema.
 
-## 12.1 Requisitos do lado do Cliente.
+## 13.1 Requisitos do lado do Cliente.
 1. Tipo de Sistema Operacional:
    
 Windows, Linux, Android, iOS.
@@ -963,7 +963,7 @@ Permissões para o uso de câmera e microfone, se aplicável (por exemplo, para 
 
 Login com autenticação de dois fatores (2FA) recomendado.
 
-## 12.2 Requisitos do lado de Servidor
+## 13.2 Requisitos do lado de Servidor
 
 1. Tipo de Sistema Operacional:
 
@@ -1005,9 +1005,9 @@ Soluções de armazenamento de backup em mídia externa ou em nuvem.
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 13. Considerações de segurança.
+# 14. Considerações de segurança.
 
-## 13.1. Lado Cliente
+## 14.1. Lado Cliente
 
 1. HTTPS:
 
@@ -1037,7 +1037,7 @@ Implementação de autenticação de dois fatores (2FA), exigindo uma segunda fo
 
 Oferecer a opção de recuperação de senha, onde o usuário recebe um código de recuperação enviado ao e-mail cadastrado.
 
-## 13.2. Lado Servidor 
+## 14.2. Lado Servidor 
 
 1. Configuração de Pastas:
 
@@ -1077,9 +1077,9 @@ O administrador do sistema não terá acesso aos dados pessoais dos usuários pa
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 14. Manutenção, instalação e Novas Funcionalidade
+# 15. Manutenção, instalação e Novas Funcionalidade
 
-## 14.1. Instalado no servidor 
+## 15.1. Instalado no servidor 
 
 1. Instalação:
 
@@ -1093,7 +1093,7 @@ Cliente: Acesso via navegador web, sem necessidade de instalação no dispositiv
 
 Configuração Inicial: Registro de dados da clínica, veterinários, atendentes e regras de agendamento.
 
-## 14.2. Manutenção
+## 15.2. Manutenção
 
 Backups: Implementação de uma política de backups regulares, com backups completos mensais e incrementais diários, para proteger dados críticos.
 
@@ -1105,7 +1105,7 @@ Banco de Dados: Monitoramento do desempenho e otimização conforme o volume de 
 
 Monitoramento: Ferramentas de monitoramento para acompanhar o desempenho e detectar problemas (tempo de resposta, uso de recursos, etc.).
 
-## 14.3. Novas funcionalidades
+## 15.3. Novas funcionalidades
 
 1. formalização do pedido
 2. Cliente não da palpite em beleza de tela
@@ -1124,9 +1124,9 @@ Feedback: O feedback dos usuários (clientes, veterinários, atendentes) é cole
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 15. Treinamento
+# 16. Treinamento
 
-## 15.1. Usuario
+## 16.1. Usuario
 
 A maneira mais eficiente de realizar o treinamento seria pela disponibilização de videos instrutivos pela Web.
 
@@ -1164,7 +1164,7 @@ Treinamento em como resolver problemas comuns no uso do sistema.
 
 Sessão de perguntas e respostas com foco nas operações do dia a dia.
 
-## 15.2. Admin
+## 16.2. Admin
 
 1. Introdução ao Sistema e Interface de Administração:
 
@@ -1226,9 +1226,9 @@ Explicação de como realizar upgrades no sistema para escalabilidade e aumento 
 
 [Voltar ao inicio](#otavio_maniezzo)
 
-# 16. Script SQL
+# 17. Script SQL
 
-## 16.1. Comandos create table;
+## 17.1. Comandos create table;
 
 ```SQL
 -- Tabela de clientes
