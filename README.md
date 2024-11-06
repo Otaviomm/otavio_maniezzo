@@ -160,7 +160,7 @@ Descrição do cenário onde o sistema deverá funcionar.
 | RNF08  | Não Funcional               | O sistema deve estar disponível 99,9% do tempo, exceto em períodos de manutenção programada.              |
 | RNF09  | Não Funcional               | A interface do sistema deve estar em português e permitir fácil leitura de informações.                   |
 
-
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 3. Visão geral do sistema.
 
@@ -205,6 +205,8 @@ Eficiência: Melhor organização das tarefas diárias da clínica.
 Segurança: Proteção de dados sensíveis dos clientes e animais.
 
 O sistema melhora a organização e a experiência dos usuários, tornando o processo de atendimento mais ágil e eficaz.
+
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 4. Diagrama ER
 
@@ -331,6 +333,7 @@ ATENDENTE → CLIENTE: Um atendente atende vários clientes.
 
 ATENDENTE → AGENDA: Um atendente organiza a agenda.
 
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 5. Diagrama de classe.
 
@@ -504,6 +507,8 @@ Atendente → Cliente: Um atendente organiza os atendimentos para vários client
 
 Atendente → Agenda: Um atendente gerencia as agendas de atendimento.
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 6. Casos de uso.
 
 ## 6.1 Casos de uso
@@ -625,15 +630,19 @@ Atendente → Agenda: Um atendente gerencia as agendas de atendimento.
 **Quero** solicitar o serviço de hospedagem para o meu animal,  
 **Para** que ele seja cuidado enquanto eu estiver ausente.
 
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 7. Diagrama de componentes.
 
 ![Diagrama_Componentes](https://github.com/Otaviomm/otavio_maniezzo/blob/main/Diagrama%20de%20componente.drawio.png)
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 8. Diagrama de implantação.
 
 ![Diagrama_Implantação](https://github.com/Otaviomm/otavio_maniezzo/blob/main/Diagrama%20de%20implantação.drawio.png)
 
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 9. Diagramas C4.
 
@@ -753,6 +762,8 @@ classDiagram
 
 ```
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 9. Protótipo de telas.
 
 ## 9.1. Telas Script Case
@@ -805,6 +816,8 @@ Tela de configurações de segurança:
 
 ![Segurança_Configuração](https://github.com/Otaviomm/otavio_maniezzo/blob/main/prints/segurança%202024-10-07%20211334.png)
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 10. Diagrama de navegaçaõ de telas.
 
 ```mermaid
@@ -836,6 +849,9 @@ graph TD
     B --> I[Financeiro]
 
 ```
+
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 11. Pilha tecnológica.
 
 ```mermaid
@@ -905,6 +921,8 @@ graph TD
     HistoricoSys --> Database
     FinanceiroSys --> Database
 ```
+
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 12. Requisitos de sistema.
 
@@ -985,6 +1003,8 @@ Suporte a múltiplas conexões simultâneas com usuários.
 Sistema de backup automatizado (diário/semanal) para garantir a integridade dos dados.
 Soluções de armazenamento de backup em mídia externa ou em nuvem.
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 13. Considerações de segurança.
 
 ## 13.1. Lado Cliente
@@ -1055,6 +1075,8 @@ Os backups devem ser criptografados e armazenados de forma segura.
 
 O administrador do sistema não terá acesso aos dados pessoais dos usuários para proteger a privacidade e minimizar riscos.
 
+[Voltar ao inicio](#otavio_maniezzo)
+
 # 14. Manutenção, instalação e Novas Funcionalidade
 
 ## 14.1. Instalado no servidor 
@@ -1100,6 +1122,7 @@ Desenvolvimento Ágil: Utilização de um ciclo de desenvolvimento ágil, permit
 
 Feedback: O feedback dos usuários (clientes, veterinários, atendentes) é coletado para priorizar melhorias.
 
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 15. Treinamento
 
@@ -1201,6 +1224,7 @@ Como contatar o suporte técnico em caso de falhas.
 
 Explicação de como realizar upgrades no sistema para escalabilidade e aumento de capacidade conforme a clínica cresce.
 
+[Voltar ao inicio](#otavio_maniezzo)
 
 # 16. Script SQL
 
@@ -1394,3 +1418,4 @@ VALUES
 
 ```
 
+[Voltar ao inicio](#otavio_maniezzo)
