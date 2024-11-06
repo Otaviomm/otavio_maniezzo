@@ -39,6 +39,11 @@ Repositório da disciplina de engenharia de software.
   - [Serviço de Hospedagem](#serviço-de-hospedagem)
 - [7. Diagrama de componentes.](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação.](#8-diagrama-de-implantação)
+- [9. Diagramas C4.](#9-diagramas-c4)
+  - [9.1. diagrama de contexto](#91-diagrama-de-contexto)
+  - [9.2. diagrama de container](#92-diagrama-de-container)
+  - [9.3. diagrama de componente](#93-diagrama-de-componente)
+  - [9.4. diagrama de código](#94-diagrama-de-código)
 - [9. Protótipo de telas.](#9-protótipo-de-telas)
   - [9.1. Telas Script Case](#91-telas-script-case)
 - [10. Diagrama de navegaçaõ de telas.](#10-diagrama-de-navegaçaõ-de-telas)
@@ -590,6 +595,125 @@ Atendente → Agenda: Um atendente gerencia as agendas de atendimento.
 # 8. Diagrama de implantação.
 
 ![Diagrama_Implantação](https://github.com/Otaviomm/otavio_maniezzo/blob/main/Diagrama%20de%20implantação.drawio.png)
+
+
+# 9. Diagramas C4.
+
+## 9.1. diagrama de contexto 
+
+```mermaid
+graph TD
+    subgraph Sistema Clínica Veterinária
+        CadastroClientes[Cadastro de Clientes e Animais]
+        GerenciamentoAgendas[Gerenciamento de Agendas]
+        AtendimentoVeterinário[Atendimento Veterinário]
+        GestãoHospedagem[Gestão de Hospedagem e Serviços]
+    end
+    
+    Cliente --> |Cadastra-se e seus animais| CadastroClientes
+    Cliente --> |Informa dados do animal| AtendimentoVeterinário
+    Atendente --> |Verifica disponibilidade e gerencia fila| GerenciamentoAgendas
+    Veterinário --> |Realiza consultas e cria prontuários| AtendimentoVeterinário
+    GerenciamentoAgendas --> |Disponibiliza agenda| AtendimentoVeterinário
+    ServiçoEntrega[Serviço de Entrega] --> |Transporte de animais| GestãoHospedagem
+```
+
+## 9.2. diagrama de container
+
+```mermaid
+graph TB
+    subgraph Cliente
+        AplicaçãoWeb[Aplicação Web]
+    end
+    
+    AplicaçãoWeb --> |Comunicação via API| Backend
+    
+    subgraph Servidor
+        Backend[Backend da Aplicação]
+        BancoDeDados[(Banco de Dados)]
+    end
+    
+    Backend --> |Registra e armazena dados| BancoDeDados
+    AplicaçãoWeb --> |Interface para clientes e atendentes| Backend
+    Backend --> |Interface para veterinários e gestão de hospedagem| BancoDeDados
+
+```
+
+## 9.3. diagrama de componente
+
+```mermaid
+graph TD
+    CadastroClientes[Cadastro de Clientes e Animais]
+    GerenciamentoAnimais[Gerenciamento de Animais]
+    AgendaConsultas[Agenda de Consultas]
+    Atendimento[Atendimento e Fichas]
+    Prontuarios[Prontuários Médicos]
+    ServicoHospedagem[Serviço de Hospedagem]
+    GerenciamentoRFID[Gerenciamento de RFID]
+    
+    CadastroClientes --> GerenciamentoAnimais
+    GerenciamentoAnimais --> |Organiza dados e consultas| AgendaConsultas
+    AgendaConsultas --> Atendimento
+    Atendimento --> Prontuarios
+    Prontuarios --> |Acessado por veterinários| Atendimento
+    GerenciamentoAnimais --> ServicoHospedagem
+    ServicoHospedagem --> GerenciamentoRFID
+
+```
+
+## 9.4. diagrama de código
+
+```mermaid
+classDiagram
+    class Cliente {
+        +String nome
+        +String endereco
+        +String telefone
+        +Animal[] animais
+        +registrarAnimal()
+    }
+    
+    class Animal {
+        +String nome
+        +String especie
+        +String rfid
+        +FichaMedica fichaMedica
+        +String tipoRacao
+        +String habitos
+        +consultaHistorico()
+    }
+    
+    class FichaMedica {
+        +String data
+        +String observacoes
+        +receita Receita
+    }
+    
+    class Receita {
+        +String medicamentos
+        +String posologia
+    }
+    
+    class Veterinario {
+        +String nome
+        +String especialidade
+        +consultarAnimal(Animal animal)
+        +gerarFichaMedica(Animal animal, FichaMedica ficha)
+    }
+    
+    class Atendimento {
+        +agendaConsulta()
+        +verificaAgendaDisponivel()
+    }
+    
+    Cliente "1" -- "*" Animal
+    Animal "1" -- "1" FichaMedica
+    FichaMedica "1" -- "1" Receita
+    Veterinario "1" -- "*" FichaMedica
+    Atendimento "1" -- "*" Veterinario
+    Atendimento "1" -- "*" Animal
+
+```
 
 # 9. Protótipo de telas.
 
